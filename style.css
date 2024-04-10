@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap') ;
+
+:root {
+    --primary-color: rgb(102, 102, 102);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.main-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+
+@media (max-width: 500px) {
+    header > .main-image {
+        display: none;
+    }
+    .mode-inspirations {
+        position: block;
+    }
+
+    .home-essence {
+        position: block;
+    }
+
+    .art-lifestyle {
+        width: 400px;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+.logo-menu-movil {
+    display: none;
+    width: 200px;
+    margin-top: 15px;
+}
+
+.menu-desplegable-barras {
+    display: none;
+    width: 30px;
+    margin: 20px;
+    float: right;
+}
+
+@media (max-width: 1050px) {
+    header > .navbar {
+        display: none;
+    }
+    header > .logo-menu-movil {
+        display: inline;
+    }
+    header > .menu-desplegable-barras{
+        display: inline;
+    }
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+main > ul > li > img {
+    width: 90%;
+    object-fit: cover;
+    transition: all 0.30s;
+}
+
+main > ul > li > img:hover {
+    transform: scale(1.06);
+}
+
+.mode-inspirations {
+    margin-top: 40px;
+    width: 90%;
+}
+
+.home-essence {
+    margin-bottom: 50px;
+    width: 90%;
+}
+
+.art-lifestyle {
+    padding-top: 80px;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
