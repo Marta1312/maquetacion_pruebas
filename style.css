@@ -20,6 +20,20 @@ body {
     color: var(--primary-color);
 }
 
+ul {
+    display: flex;
+
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
 .main-image {
     width: 100%;
     height: 250px;
@@ -28,22 +42,7 @@ body {
     object-fit: cover;
 }
 
-@media (max-width: 500px) {
-    header > .main-image {
-        display: none;
-    }
-    .mode-inspirations {
-        position: block;
-    }
 
-    .home-essence {
-        position: block;
-    }
-
-    .art-lifestyle {
-        width: 400px;
-    }
-}
 
 .navbar {
     display: flex;
@@ -70,18 +69,6 @@ body {
     float: right;
 }
 
-@media (max-width: 1050px) {
-    header > .navbar {
-        display: none;
-    }
-    header > .logo-menu-movil {
-        display: inline;
-    }
-    header > .menu-desplegable-barras{
-        display: inline;
-    }
-}
-
 header > nav {
     display: flex;
     justify-content: center;
@@ -96,6 +83,17 @@ header > nav {
 
 main {
     padding: 20px;
+}
+
+main > ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+main > ul > li {
+    flex-grow: 1;
+    flex-basis: 200px;
 }
 
 main > ul > li > img {
@@ -120,17 +118,17 @@ main > ul > li > img:hover {
 
 .art-lifestyle {
     padding-top: 80px;
+    min-width: 350px;
 }
 
-ul li {
-    list-style: none;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-ul {
-    display: flex;
-    align-items: center;
+@media (max-width: 1050px) {
+    header > .navbar {
+        display: none;
+    }
+    header > .logo-menu-movil {
+        display: inline;
+    }
+    header > .menu-desplegable-barras{
+        display: inline;
+    }
 }
