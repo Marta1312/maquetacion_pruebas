@@ -72,6 +72,7 @@ p {
 header > nav {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .navbar-ul {
@@ -104,6 +105,14 @@ main > ul > li > img {
 
 main > ul > li > img:hover {
     transform: scale(1.06);
+}
+
+body > header > nav > ul > li > img {
+    width: 20px;
+}
+
+body > header > nav > ul > li > img:hover {
+    opacity: 0.6;
 }
 
 .mode-inspirations {
